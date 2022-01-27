@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            outline:0;
+        }
+        input,textarea{
+            color: red;
+        }
+        label{
+            color:green
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <form>
+        <label>Enter Email:</label><input type="email" placeholder="Enter Your EmailId" value="chitteashok189@gmail.com" disabled><br><br>
+        <label>Enter Username:</label><input type="text" maxlength="5" required><br><br>
+        <label>Mobile Number</label><input type="text" maxlength="10"><br><br>
+        <label>Enter Passowrd:</label><input type="password" required><br><br>
+        <label>Enter DOB</label><input type="date" min="2000-12-01" max="2021-12-31"><br><br>
+        <label>Please upload Your Resume:</label><input type="file"><br><br>
+        <label>Choose Your Gender:</label><input type="radio" name="gen">Male <input type="radio" name="gen">Female <input type="radio" name="gen">Others<br><br>
+        <label>Please Select Your Course:</label>
+        <select>
+            <option>AWS</option>
+            <option>Full stack</option>
+            <option>Mern stack</option>
+            <option>Mean stack</option>
+            <option>Java stack</option>
+        </select><br><br>
+        <input type="checkbox">I agreed to terms and conditions<br><br>
+        <label>Time</label><input type="time"><br><br>
+        <textarea rows="8" cols="40" placeholder="Tell about your self"></textarea><br><br>
+        <input type="submit"> <input type="reset">
+        <!-- <button>Submit</button> -->
+
+    </form>
+    
+</body>
+</html>
