@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <i class="fa fa-thumbs-down" style="color: grey;font-size: 40px;" onclick="validate()"></i><span id="msg">0</span>
+        <script>
+            var count=0;
+            function validate(){
+                count++;
+               document.getElementById("msg").innerHTML=count;
+            }
+         
+        </script>
+    </body>
+</html>

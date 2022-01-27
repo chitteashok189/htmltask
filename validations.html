@@ -1,0 +1,46 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        Enter Email:<input type="email" required id="email"><br>
+        <p id="msg"></p>
+        Enter Password:<input type="text" required id="pwd"><br>
+        <p id="msg1"></p>
+        Enter Mobile No:<input type="text" required id="number"><br>
+        <p id="msg2"></p>
+        <button ondblclick="validate()">Submit</button>
+        <script>
+            function validate(){
+                var email=document.getElementById("email").value;
+                var pwd=document.getElementById("pwd").value;
+                var number=document.getElementById("number").value;
+                var msg=document.getElementById("msg")
+                var msg1=document.getElementById("msg1");
+                var msg2=document.getElementById("msg2");
+                var regex=/^([a-zA-Z0-9\.-]+)@([0-9a-zA-Z]+)(\.[a-zA-Z]{2,3})(\.[a-zA-Z]{2,3})?$/;
+                if(regex.test(email)){
+                    msg.innerHTML="";
+                }
+                else{
+                    msg.innerHTML="Invalid EmailId";
+                }
+                var regex1=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*.]).{8,}$/;
+                    if(regex1.test(pwd)){
+                    msg1.innerHTML="";
+                }
+                else{
+                    msg1.innerHTML="Invalid Password";
+                }
+                var regex3=/^[0-9]{10}$/;
+                if(regex3.test(number)){
+                    msg2.innerHTML="";
+                }
+                else{
+                    msg2.innerHTML="Invalid Number";
+                }
+
+            }
+        </script>
+    </body>
+</html>
